@@ -9,6 +9,7 @@ import Authentication from './Context/Authentication/Authentication'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Authentication>
+
         <RouterProvider router={router}>
         </RouterProvider>
     </Authentication>
