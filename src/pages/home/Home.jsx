@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import { Link, NavLink, Outlet } from 'react-router-dom'
 import './home.css'
 import logo from '../../../public/logo.jpg'
 import { AuthContext } from '../../Context/Authentication/Authentication'
@@ -41,7 +41,7 @@ const Home = () => {
        </div>
        <div className="navbar-center hidden lg:flex">
            <ul className="menu menu-horizontal px-1">
-           <li><Link to='/products' className='text-lg'>Product</Link></li>
+           <li><NavLink to='/products' className='text-lg'>Product</NavLink></li>
            </ul>
        </div>
        <div className="navbar-end">
