@@ -42,7 +42,7 @@ const Authentication = ({children}) => {
         });
 
         return () => unSubscribe();
-      }, []);
+      }, [setUser,setLoader]);
 
       const authInfo = {
         createUser,
