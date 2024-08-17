@@ -20,7 +20,7 @@ const ProductPage = () => {
     const fetchProducts = async () => {
       const query = new URLSearchParams(filters).toString();
       const { data } = await axios.get(
-        `http://localhost:5000/products?${query}`
+        `https://prodcommerce-alomgir-hasanshakibs-projects.vercel.app/products?${query}`
       );
       setProducts(data.products);
       setTotalPages(data.totalPages);
@@ -57,6 +57,16 @@ const ProductPage = () => {
             onChange={handleFilterChange}
           >
             <option value="">All Categories</option>
+            <option value="Wearables">Wearables</option>
+            <option value="Tools">Tools</option>
+            <option value="Kitchen Appliances">Kitchen Appliances</option>
+            <option value="Computers">Computers</option>
+            <option value="Personal Care">Personal Care</option>
+            <option value="Home Entertainment">Home Entertainment</option>
+            <option value="Smart Home">Smart Home</option>
+            <option value="Wearables">Wearables</option>
+            <option value="Accessories">Accessories</option>
+            <option value="Audio">Audio</option>
             {/* Add category options */}
           </select>
           <select
